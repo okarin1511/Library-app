@@ -1,0 +1,32 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>Library</title>
+{% endblock %}
+
+{% block body %}
+<div class = "content">
+    <h1 class = "heading">Here's all the books in the Library</h1>
+
+    <div>
+        <a href="/">
+        <input type = "button" class="btn" value = "Home">    
+        </a>
+    </div>
+
+    <table>
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+            
+        </tr>
+        {% for book in books %}
+            <tr>                
+                <td> {{ book.book_name }} </td>
+                <td> {{ book.author }} </td>
+            </tr>
+        {% endfor %}  
+    </table>    
+
+</div>
+{% endblock %}

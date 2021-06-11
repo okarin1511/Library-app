@@ -1,0 +1,42 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>Library</title>
+{% endblock %}
+
+{% block body %}
+<div class = "content">
+    <h1 class = "heading">The Library</h1>
+
+    <div class = "option">
+        <a href="/addbook">
+        <input type = "button" class="btn" value = "Add Book">    
+        </a>
+    </div>
+    
+    <div class = "option">
+        <a href="/member">
+            <input type="button" class="btn" value="New Member">
+        </a>
+    </div>
+
+    <div class = "option">
+        <a href="/borrow">
+            <input type="button" class="btn" value="Borrow">
+        </a>
+    </div>
+
+    <div class = "option">
+        <a href="/returnbook">
+            <input type="button" class="btn" value="Return a book">
+        </a>
+    </div>
+
+    <div class = "option">
+        <a href="/collection">
+            <input type="button" class="btn" value="See all books">
+        </a>
+    </div>
+
+</div>
+{% endblock %}

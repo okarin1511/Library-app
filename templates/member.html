@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>Library</title>
+{% endblock %}
+
+{% block body %}
+<div class = "content">
+    <h1 class = "heading">Member Page</h1>
+
+    <div>
+        <a href="/">
+        <input type = "button" class="home-btn" value = "Home">    
+        </a>
+    </div>
+    
+    <form action="/" method="POST">
+        <input type="text" name="book_name" class="input" id="bookname_name" placeholder="Enter Member Name">
+        <input type="submit" class="btn" value="Add member">
+    </form>
+
+</div>
+{% endblock %}
